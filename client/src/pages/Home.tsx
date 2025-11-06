@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import StorySection from "@/components/StorySection";
 import ProcessSteps from "@/components/ProcessSteps";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import heroImage from '@assets/generated_images/Coffee_roasting_hero_image_4fd3661b.png';
 import ethiopianImage from '@assets/generated_images/Ethiopian_light_roast_product_e4b3e28f.png';
@@ -56,6 +57,19 @@ export default function Home() {
           content="Founded in 2020 with a passion for exceptional coffee, we've dedicated ourselves to sourcing the finest single-origin beans from around the world. Every batch is roasted with care and precision, honoring the unique characteristics of each origin. We believe that great coffee starts with great relationships—with farmers, with our community, and with every person who enjoys our coffee."
         />
         <ProcessSteps />
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-3xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
+                Get in Touch
+              </h2>
+              <p className="font-body text-lg text-muted-foreground">
+                Have questions about our coffee? We'd love to hear from you.
+              </p>
+            </div>
+            <ContactForm />
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
